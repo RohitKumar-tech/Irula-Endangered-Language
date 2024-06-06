@@ -1,0 +1,56 @@
+.Language_research p{
+  margin: auto;
+  width: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Language_research h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card {
+  background: none;
+  width: 25%; /* Adjusted width to fit three cards with spacing */
+}
+
+.card:hover {
+  -ms-transform-origin-x: 10%;
+}
+
+.card-container {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between; /* Adjusted alignment to evenly space the cards */
+  flex-wrap: wrap; /* Allows cards to wrap to the next line */
+}
+
+.card img {
+  width: 100%;
+  height: 170px;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+@media (max-width : 1250px) {
+  .card,
+  .card_tennis {
+    width: 48%; /* Set width to 100% for smaller screens */
+    margin: 20px 0; /* Adjust margin to provide vertical spacing */
+}
+
+@media (max-width : 850px) {
+  .card,
+  .card_tennis {
+    width: 100%; /* Set width to 100% for smaller screens */
+    margin: 20px 0; /* Adjust margin to provide vertical spacing */
+}

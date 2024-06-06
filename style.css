@@ -58,3 +58,9 @@
   button:hover {
     cursor: pointer;
   }
+
+  
+  #map_video {
+    display: block;
+
+  }

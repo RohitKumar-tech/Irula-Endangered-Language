@@ -6,18 +6,16 @@
     <script src="/firebase-connections/google.js" defer type="module"></script>
     <script src="/firebase-connections/git.js" defer type="module"></script>
     <script src="/firebase-connections/twitter.js" defer type="module"></script>
-    <title>Irula Endangered species</title>
+    <title>Irula Endangered Languages</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="slider.css">
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-
-    <style>
-        #map {
-            width: 100%;
-            height: 100vh;
-        }
-    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -57,24 +55,74 @@
               </ul>
             </div>
         </div>
+
+        <div id="map"></div>
+
     </nav>
 
-    <div id="map"></div>
+    <!-- Cards -->
+    <section class="Language_research">
+        <h2>Browse Resources by Category</h2>
+
+        <p>Current number of resources: 7711</p>
+
+        <p>Use the category buttons below to easily search our resources on information, academic publications, and research concerning the world’s endangered languages! Our resources include information on anthropology, sociology, education, cognitive science, environmental science, public policy, and more and have been uploaded by users and researchers alike. If you have resources or samples of endangered languages, upload your papers, presentations, links, recordings, etc. using the ‘Submit’ button at the top of the page.</p>
+    
+        <div class="card-container">
+            <div class="card">
+                <div class="card-content">
+                    <a href="#"><img src="assets/b1.png" alt="b1"></a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-content">
+                    <a href="#"><img src="assets/b2.png" alt="b2"></a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-content">
+                    <a href="#"><img src="assets/b3.png" alt="b3"></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <a href="#"><img src="assets/b4.png" alt="b4"></a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-content">
+                    <a href="#"><img src="assets/b5.png" alt="b5"></a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-content">
+                    <a href="#"><img src="assets/b6.png" alt="b6"></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <a href="#"><img src="assets/b7.png" alt="b7"></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <a href="#"><img src="assets/b8.png" alt="b8"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Infinite slider -->
+
+    
 
 </body>
 <script src="script.js"></script>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script>
-
-    var map = L.map('map').setView([51.505, -0.09], 13);
-
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-    L.marker([51.5, -0.09]).addTo(map)
-        .bindPopup('A pretty CSS popup.<br> Easily customizable.')
-        .openPopup();
-        
-    </script>
 </html>
