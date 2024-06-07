@@ -29,12 +29,28 @@
 }
 
 .card_lan .centered h4{
+  position: relative;
+  top: -50px;
   margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bolder;
   font-size: xx-large;
+}
+
+.card_lan .centered {
+  width: 100%;
+}
+
+.card_lan .centered select{
+  width: 20%;
+  padding: 20px 5px 20px;
+  position: relative;
+  margin: 10px 20px 10px;
+  display: inline-flex;
+  justify-content: center; 
+  top: 60px;
 }
 
 .card_lan .centered p{
