@@ -22,8 +22,10 @@ This project is dedicated to creating an interactive map showcasing the distribu
 The Irula language, spoken by the Irula people in the southern parts of India, is facing the threat of extinction. This project aims to raise awareness about the language by providing an interactive map that displays information about the Irula-speaking regions, their cultural significance, and more.
 
 ## Images
-<!-- Add any relevant images or screenshots of the project here -->
-![Irula Language Map](images/irula_map.png)
+
+![Irula Language Map](Readme_image/1.png)
+![Irula Language Map](Readme_image/2.png)
+![Irula Language Map](Readme_image/3.png)
 
 ## Features
 - Interactive map with hover and zoom functionality.
