@@ -23,11 +23,43 @@
   width: 25%; /* Adjusted width to fit three cards with spacing */
 }
 
+.card_lan {
+  background: none;
+  width: 100%; /* Adjusted width to fit three cards with spacing */
+}
+
+.card_lan .centered h4{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.card_lan .centered p{
+  display: flex;
+  position: relative;
+  top: 50px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: large;
+}
+
 .card:hover {
   -ms-transform-origin-x: 10%;
 }
 
 .card-container {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between; /* Adjusted alignment to evenly space the cards */
+  flex-wrap: wrap; /* Allows cards to wrap to the next line */
+}
+
+.card-container_res {
   margin: auto;
   width: 70%;
   display: flex;

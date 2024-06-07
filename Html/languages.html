@@ -12,12 +12,38 @@
     <link rel="stylesheet" href="../Css/map.css">
     <link rel="stylesheet" href="../Css/slider.css">
     <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/footer.css">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
 </head>
+
+<style>
+    /* Add this to your style.css or a relevant CSS file */
+
+.column-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.column {
+    background-color: #ffffff; /* White background for the columns */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex: 1; /* Make columns flexible */
+    margin: 10px; /* Space between columns */
+}
+
+.column h3 {
+    margin-top: 0; /* Remove default top margin from headers */
+}
+
+</style>
 <body>
     <!-- Navbar -->
 
@@ -57,27 +83,34 @@
 
     </nav>
 
-    <div><img src="https://unsplash.it/1472/400" alt=""></div>
+    <div class="card_lan">
+        <div class="card-content_lan">
+            <div style="width: 100%;"><img src="../assets/language_background.jpg" alt="background" style="width: 100%; height: 400px;   filter: blur(3px); -webkit-filter: blur(3px);"></div>
+            <div class="centered"><h4>Languages</h4></div>
+            <div class="centered"><p>Search through our catalogue of over 3,000 endangered languages.</p></div>
+        </div>
+    </div>
 
     <section class="content">
+    <div class="column-wrapper">
         <div class="column">
             <h3>Languages</h3>
             <ul>
-               <li><a href="#">1. Adiyan </a></li>
-               <li><a href="#"> 2. Aranadan </a></li> 
-               <li><a href="#"> 3. Eravallan </a></li> 
-               <li><a href="#"> 4. Irular </a></li>
-               <li><a href="#"> 5. Kadar </a></li>
-               <li><a href="#"> 6. Kammara (excluding Kanayakumari district and Shenkottah taulk of 
+                <li><a href="#">1. Adiyan </a></li>
+                <li><a href="#"> 2. Aranadan </a></li> 
+                <li><a href="#"> 3. Eravallan </a></li> 
+                <li><a href="../Languages/irular/irular.html"> 4. Irular </a></li>
+                <li><a href="#"> 5. Kadar </a></li>
+                <li><a href="#"> 6. Kammara (excluding Kanayakumari district and Shenkottah taulk of 
                 Tirunelveli district) </a></li>
-               <li><a href="#"> 7. Kanikaran, Kanikkar (in Kanyakumari district and Shenkottah taulk of 
+                <li><a href="#"> 7. Kanikaran, Kanikkar (in Kanyakumari district and Shenkottah taulk of 
                 Tirunelveli district). </a></li> 
-               <li><a href="#"> 8. Kaniyan, Kanyan </a></li> 
-               <li><a href="#"> 9. Kattunayakan </a></li>
-               <li><a href="#"> 10. Kochu Velan </a></li>
-               <li><a href="#"> 11. Konda Kapus </a></li>
-               <li><a href="#"> 12. Kondareddis </a></li> 
-               <li><a href="#"> 13. Koraga </a></li> 
+                <li><a href="#"> 8. Kaniyan, Kanyan </a></li> 
+                <li><a href="#"> 9. Kattunayakan </a></li>
+                <li><a href="#"> 10. Kochu Velan </a></li>
+                <li><a href="#"> 11. Konda Kapus </a></li>
+                <li><a href="#"> 12. Kondareddis </a></li> 
+                <li><a href="#"> 13. Koraga </a></li> 
                 <li><a href="#"> 14. Kota (excluding Kanyakumari district and Shenkottah taulk of Tirunelveli district). </a></li>
                 <li><a href="#"> 15. Kudiya, Melakudi </a></li>
                 <li><a href="#"> 16. Kurichchan </a></li>
@@ -103,51 +136,59 @@
                 <li><a href="#"> 36. Uraly.</a></li>
             </ul>
         </div>
-        <div class="column h3" style="text-align: justify;">
+        <div class="column">
             <h3>Districts</h3>
             <ul>
-                
-             <li><a href="#"> 1. Ariyalur </a></li>
-             <li><a href="#"> 2. Chengalpattu </a></li>
-             <li><a href="#"> 3. Chennai</a></li>
-             <li><a href="#"> 4. Coimbatore</a></li>
-             <li><a href="#"> 5. Cuddalore</a></li>
-             <li><a href="#"> 6. Dharmapuri</a></li>
-             <li><a href="#"> 7. Dindigul</a></li>
-             <li><a href="#"> 8. Erode</a></li>
-             <li><a href="#"> 9. Kallakurichi</a></li>
-             <li><a href="#"> 10. Kancheepuram</a></li>
-             <li><a href="#"> 11. Karur</a></li>
-             <li><a href="#"> 12. Krishnagiri</a></li>
-             <li><a href="#"> 13. Madurai</a></li>
-             <li><a href="#"> 14. Mayiladuthurai</a></li>
-             <li><a href="#"> 15. Nagapattinam</a></li>
-             <li><a href="#"> 16. Kanyakumari</a></li>
-             <li><a href="#"> 17. Namakkal</a></li>
-             <li><a href="#"> 18. Perambalur</a></li>
-             <li><a href="#"> 19. Pudukkottai</a></li>
-             <li><a href="#"> 20. Ramanathapuram</a></li>
-             <li><a href="#"> 21. Ranipet</a></li>
-             <li><a href="#"> 22. Salem</a></li>
-             <li><a href="#"> 23. Sivaganga</a></li>
-             <li><a href="#"> 24. Tenkasi</a></li>
-             <li><a href="#"> 25. Thanjavur</a></li>
-             <li><a href="#"> 26. Theni</a></li>
-             <li><a href="#"> 27. Thiruvallur</a></li>
-             <li><a href="#"> 28. Thiruvarur</a></li>
-             <li><a href="#"> 29. Thoothukudi</a></li>
-             <li><a href="#"> 30. Tirunelveli</a></li>
-             <li><a href="#"> 31. Tirupathur</a></li>
-             <li><a href="#"> 32. Tiruppur</a></li>
-             <li><a href="#"> 33. Tiruvannamalai</a></li>
-             <li><a href="#"> 34. The Nilgiris</a></li>
-             <li><a href="#"> 35. Vellore</a></li>
-             <li><a href="#"> 36. Villupuram</a></li>
-             <li><a href="#"> 37. Virudhunagar</a></li>
+                <li><a href="#"> 1. Ariyalur </a></li>
+                <li><a href="#"> 2. Chengalpattu </a></li>
+                <li><a href="#"> 3. Chennai</a></li>
+                <li><a href="#"> 4. Coimbatore</a></li>
+                <li><a href="#"> 5. Cuddalore</a></li>
+                <li><a href="#"> 6. Dharmapuri</a></li>
+                <li><a href="#"> 7. Dindigul</a></li>
+                <li><a href="#"> 8. Erode</a></li>
+                <li><a href="#"> 9. Kallakurichi</a></li>
+                <li><a href="#"> 10. Kancheepuram</a></li>
+                <li><a href="#"> 11. Karur</a></li>
+                <li><a href="#"> 12. Krishnagiri</a></li>
+                <li><a href="#"> 13. Madurai</a></li>
+                <li><a href="#"> 14. Mayiladuthurai</a></li>
+                <li><a href="#"> 15. Nagapattinam</a></li>
+                <li><a href="#"> 16. Kanyakumari</a></li>
+                <li><a href="#"> 17. Namakkal</a></li>
+                <li><a href="#"> 18. Perambalur</a></li>
+                <li><a href="#"> 19. Pudukkottai</a></li>
+                <li><a href="#"> 20. Ramanathapuram</a></li>
+                <li><a href="#"> 21. Ranipet</a></li>
+                <li><a href="#"> 22. Salem</a></li>
+                <li><a href="#"> 23. Sivaganga</a></li>
+                <li><a href="#"> 24. Tenkasi</a></li>
+                <li><a href="#"> 25. Thanjavur</a></li>
+                <li><a href="#"> 26. Theni</a></li>
+                <li><a href="#"> 27. Thiruvallur</a></li>
+                <li><a href="#"> 28. Thiruvarur</a></li>
+                <li><a href="#"> 29. Thoothukudi</a></li>
+                <li><a href="#"> 30. Tirunelveli</a></li>
+                <li><a href="#"> 31. Tirupathur</a></li>
+                <li><a href="#"> 32. Tiruppur</a></li>
+                <li><a href="#"> 33. Tiruvannamalai</a></li>
+                <li><a href="#"> 34. The Nilgiris</a></li>
+                <li><a href="#"> 35. Vellore</a></li>
+                <li><a href="#"> 36. Villupuram</a></li>
+                <li><a href="#"> 37. Virudhunagar</a></li>
             </ul>
         </div>
-    </section>
+    </div>
+</section>
 
+<footer>
+    <div class="footer-links">
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <p class="copyright">Copyright 2024 Irula Endangered Languages. All rights reserved.</p>
+</footer>
     
 
 </body>
