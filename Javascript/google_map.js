@@ -36,7 +36,7 @@ function initMap() {
             } : null
         });
 
-        var contentString = '<div><a href="../index.html" style="text-decoration: underline; font-weight: bolder; font-size: larger;">' + language.name + '</a><br>' +
+        var contentString = '<div><a href="../Languages/' + language.name.toLowerCase().replace(/[^a-z]+/g, '-') + '.html" style="text-decoration: underline; font-weight: bolder; font-size: larger;">' + language.name + '</a><br>' +
                             (language.risk ? 'Risk: ' + language.risk + '<br>' : '') +
                             (language.pop ? 'Population: ' + language.pop : '') +
                             '</div>';
