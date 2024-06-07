@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#nav-menu {
+  margin: 0px auto 0px;
+  width: 30%;
+  padding: 10px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+#nav-menu a {
+  text-decoration: none;
+  color: gray;
+}
+
+.header {
+  background-color: #fff;
+  padding: 0px 20px 100px;
+}
+
+.logo {
+  float: left;
+  margin-right: 20px;
+}
+
+.logo img {
+  height: 100px;
+  width: 200px;
+}
+
+.header-right {
+  float: right;
+
+}
+
+.header-right ul {
+  font-size: 20px;
+  list-style: none;
+  margin: 10px;
+  padding: 30px;
+}
+
+.header-right li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: blue;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
+#map_video {
+  display: block;
+}
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #006400;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.hero {
+    background-image: url('path/to/your/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.column h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column ul li {
+    margin-bottom: 5px;
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: #006400;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px 0;
+    color: #666;
+    font-size: 14px;
+}

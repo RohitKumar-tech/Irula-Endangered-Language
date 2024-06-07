@@ -1,7 +1,7 @@
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 7,
-        center: {lat: 11.410000, lng: 76.699997, pop: 0}
+        center: {lat: 11.410000, lng: 76.699997}
     });
 
     var languages = [
@@ -28,16 +28,21 @@ function initMap() {
 
     languages.forEach(function(language) {
         var marker = new google.maps.Marker({
-            position: {lat: language.lat, lng: language.lng, pop: language.pop},
+            position: {lat: language.lat, lng: language.lng},
             map: map,
             title: language.name,
-            icon: {
+            icon: language.risk ? {
                 url: "http://maps.google.com/mapfiles/ms/icons/" + (language.risk === "high" ? "red-dot.png" : "green-dot.png")
-            }
+            } : null
         });
 
+        var contentString = '<div><a href="../index.html" style="text-decoration: underline; font-weight: bolder; font-size: larger;">' + language.name + '</a><br>' +
+                            (language.risk ? 'Risk: ' + language.risk + '<br>' : '') +
+                            (language.pop ? 'Population: ' + language.pop : '') +
+                            '</div>';
+
         var infowindow = new google.maps.InfoWindow({
-            content: '<div><strong>' + language.name + '</strong><br>Risk: ' + language.risk + '</div>'
+            content: contentString
         });
 
         marker.addListener('click', function() {

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/firebase-connections/google.js" defer type="module"></script>
+    <script src="/firebase-connections/git.js" defer type="module"></script>
+    <script src="/firebase-connections/twitter.js" defer type="module"></script>
+    <title>Irula Endangered Languages</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/cards.css">
+    <link rel="stylesheet" href="../Css/map.css">
+    <link rel="stylesheet" href="../Css/slider.css">
+    <link rel="stylesheet" href="../Css/style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+</head>
+<body>
+    <!-- Navbar -->
+
+    <nav>
+        <div id="nav-menu">
+            <a href="#" class="font-medium hover:text-primary">Create your account</a>
+            <a href="#" class="font-medium hover:text-primary">sign in</a>
+            <button placeholder="Search">Search</button>
+            <button1 type="submit" id="google-login-btn" class="google-button"><i class='bx bxl-google'></i></button1>
+            <button1 type="submit" id="github-login-btn" class="github-button"><i class='bx bxl-github' ></i></button1>
+            <button1 type="submit" id="twitter-login-btn" class="twitter-button"><i class='bx bxl-twitter' ></i></button1>
+        </div>
+
+        <div class="header">
+            <div class="logo">
+              <a href="../index.html"><img src="../assets/logo.png" alt="ELP Logo"></a>
+            </div>
+            <div class="header-right">
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li>|</li>
+                <li><a href="#">Languages</a></li>
+                <li>|</li>
+                <li><a href="resources.html">Resources</a></li>
+                <li>|</li>
+                <li><a href="#">Blog</a></li>
+                <li>|</li>
+                <li><a href="#">Download</a></li>
+                <li>|</li>
+                <li><a href="#">About</a></li>
+                <li>|</li>
+                <li><a href="#">Mentors</a></li>
+              </ul>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <div><img src="https://unsplash.it/1472/400" alt=""></div>
+
+    <section class="content">
+        <div class="column">
+            <h3>Languages</h3>
+            <ul>
+               <li><a href="#">1. Adiyan </a></li>
+               <li><a href="#"> 2. Aranadan </a></li> 
+               <li><a href="#"> 3. Eravallan </a></li> 
+               <li><a href="#"> 4. Irular </a></li>
+               <li><a href="#"> 5. Kadar </a></li>
+               <li><a href="#"> 6. Kammara (excluding Kanayakumari district and Shenkottah taulk of 
+                Tirunelveli district) </a></li>
+               <li><a href="#"> 7. Kanikaran, Kanikkar (in Kanyakumari district and Shenkottah taulk of 
+                Tirunelveli district). </a></li> 
+               <li><a href="#"> 8. Kaniyan, Kanyan </a></li> 
+               <li><a href="#"> 9. Kattunayakan </a></li>
+               <li><a href="#"> 10. Kochu Velan </a></li>
+               <li><a href="#"> 11. Konda Kapus </a></li>
+               <li><a href="#"> 12. Kondareddis </a></li> 
+               <li><a href="#"> 13. Koraga </a></li> 
+                <li><a href="#"> 14. Kota (excluding Kanyakumari district and Shenkottah taulk of Tirunelveli district). </a></li>
+                <li><a href="#"> 15. Kudiya, Melakudi </a></li>
+                <li><a href="#"> 16. Kurichchan </a></li>
+                <li><a href="#"> 17. Kurumbas (in the Nilgiris district) </a></li>
+                <li><a href="#"> 18. Kurumans </a></li>
+                <li><a href="#"> 19. Maha Malasar </a></li>
+                <li><a href="#"> 20. Malai Arayan </a></li>
+                <li><a href="#"> 21. Malai Pandaram </a></li>
+                <li><a href="#"> 22. Malai Vedan </a></li>
+                <li><a href="#"> 23. Malakkuravan </a></li>
+                <li><a href="#"> 24. Malasar </a></li>
+                <li><a href="#"> 25. Malayali (in Dharmapuri, North Arcot, Pudukottai, Salem, South Arcot and Tiruchirappalli districts) </a></li> 
+                <li><a href="#"> 26. Malayakandi </a></li>
+                <li><a href="#"> 27. Mannan </a></li>
+                <li><a href="#"> 28. Mudugar, Muduvan </a></li> 
+                <li><a href="#"> 29. Muthuvan </a></li>
+                <li><a href="#"> 30. Pallayan </a></li>
+                <li><a href="#"> 31. Palliyan </a></li>
+                <li><a href="#"> 32. Palliyar </a></li>
+                <li><a href="#"> 33. Paniyan </a></li>
+                <li><a href="#"> 34. Sholaga </a></li>
+                <li><a href="#"> 35. Toda (excluding Kanyakumari district and Shenkottah taulk of Tirunelveli district). </a></li>
+                <li><a href="#"> 36. Uraly.</a></li>
+            </ul>
+        </div>
+        <div class="column h3" style="text-align: justify;">
+            <h3>Districts</h3>
+            <ul>
+                
+             <li><a href="#"> 1. Ariyalur </a></li>
+             <li><a href="#"> 2. Chengalpattu </a></li>
+             <li><a href="#"> 3. Chennai</a></li>
+             <li><a href="#"> 4. Coimbatore</a></li>
+             <li><a href="#"> 5. Cuddalore</a></li>
+             <li><a href="#"> 6. Dharmapuri</a></li>
+             <li><a href="#"> 7. Dindigul</a></li>
+             <li><a href="#"> 8. Erode</a></li>
+             <li><a href="#"> 9. Kallakurichi</a></li>
+             <li><a href="#"> 10. Kancheepuram</a></li>
+             <li><a href="#"> 11. Karur</a></li>
+             <li><a href="#"> 12. Krishnagiri</a></li>
+             <li><a href="#"> 13. Madurai</a></li>
+             <li><a href="#"> 14. Mayiladuthurai</a></li>
+             <li><a href="#"> 15. Nagapattinam</a></li>
+             <li><a href="#"> 16. Kanyakumari</a></li>
+             <li><a href="#"> 17. Namakkal</a></li>
+             <li><a href="#"> 18. Perambalur</a></li>
+             <li><a href="#"> 19. Pudukkottai</a></li>
+             <li><a href="#"> 20. Ramanathapuram</a></li>
+             <li><a href="#"> 21. Ranipet</a></li>
+             <li><a href="#"> 22. Salem</a></li>
+             <li><a href="#"> 23. Sivaganga</a></li>
+             <li><a href="#"> 24. Tenkasi</a></li>
+             <li><a href="#"> 25. Thanjavur</a></li>
+             <li><a href="#"> 26. Theni</a></li>
+             <li><a href="#"> 27. Thiruvallur</a></li>
+             <li><a href="#"> 28. Thiruvarur</a></li>
+             <li><a href="#"> 29. Thoothukudi</a></li>
+             <li><a href="#"> 30. Tirunelveli</a></li>
+             <li><a href="#"> 31. Tirupathur</a></li>
+             <li><a href="#"> 32. Tiruppur</a></li>
+             <li><a href="#"> 33. Tiruvannamalai</a></li>
+             <li><a href="#"> 34. The Nilgiris</a></li>
+             <li><a href="#"> 35. Vellore</a></li>
+             <li><a href="#"> 36. Villupuram</a></li>
+             <li><a href="#"> 37. Virudhunagar</a></li>
+            </ul>
+        </div>
+    </section>
+
+    
+
+</body>
+<script src="../Javascript/google_map.js"></script>
+</html>
