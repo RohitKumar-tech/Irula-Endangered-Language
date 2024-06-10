@@ -154,3 +154,8 @@ body {
     display: flex;
     flex-direction: row;
   }
+
+  .map_container {
+    height: 200px;
+    border: 1px solid #ddd;
+  }

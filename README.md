@@ -87,6 +87,7 @@ We would like to thank the following resources and communities for their support
 - Our mentors and peers for their invaluable feedback and encouragement.
 
 For more information, please contact any of the authors:
+
 - Rohit Kumar: rohitkumar620200@gmail.com
 - Samriddhi Dubey: sd9643@srmist.edu.in
 - Prathmesh Pathwardhan: pmp31104@gmail.com

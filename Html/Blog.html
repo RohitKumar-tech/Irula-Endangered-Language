@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/firebase-connections/google.js" defer type="module"></script>
+    <script src="/firebase-connections/git.js" defer type="module"></script>
+    <script src="/firebase-connections/twitter.js" defer type="module"></script>
+    <title>Irula Endangered Languages</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/cards.css">
+    <link rel="stylesheet" href="../Css/map.css">
+    <link rel="stylesheet" href="../Css/slider.css">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/footer.css">
+    <link rel="stylesheet" href="../Css/languages.css">
+    <link rel="stylesheet" href="../Css/Blog.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+</head>
+
+<style>
+    body {
+    font-family: sans-serif;
+    }
+
+    .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    }
+
+    .card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    }
+
+    .card-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+
+    .card-body {
+    font-size: 1em;
+    line-height: 1.5;
+    }
+
+    .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    }
+
+    .btn {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+    background-color: #0056b3;
+    }
+
+    .icon {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    }
+
+    .icon i {
+    font-size: 2em;
+    color: #666;
+    }
+</style>
+
+<body>
+    <!-- Navbar -->
+
+    <nav>
+        <div id="nav-menu">
+            <a href="#" class="font-medium hover:text-primary">Create your account</a>
+            <a href="#" class="font-medium hover:text-primary">sign in</a>
+            <button placeholder="Search">Search</button>
+            <button1 type="submit" id="google-login-btn" class="google-button"><i class='bx bxl-google'></i></button1>
+            <button1 type="submit" id="github-login-btn" class="github-button"><i class='bx bxl-github' ></i></button1>
+            <button1 type="submit" id="twitter-login-btn" class="twitter-button"><i class='bx bxl-twitter' ></i></button1>
+        </div>
+
+        <div class="header">
+            <div class="logo">
+              <a href="../index.html"><img src="../assets/logo.png" alt="ELP Logo"></a>
+            </div>
+            <div class="header-right">
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li>|</li>
+                <li><a href="languages.html">Languages</a></li>
+                <li>|</li>
+                <li><a href="resources.html">Resources</a></li>
+                <li>|</li>
+                <li><a href="Submit.html">Submit</a></li>
+                <li>|</li>
+                <li><a href="#">Blog</a></li>
+                <li>|</li>
+                <li><a href="Download.html">Download</a></li>
+                <li>|</li>
+                <li><a href="About.html">About</a></li>
+                <li>|</li>
+                <li><a href="Mentors.html">Mentors</a></li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Blog</h1>
+        <p>Recent news and updates regarding the Endangered Languages Project</p>
+        </header>
+
+        <div class="container">
+            <div class="content-left">
+                <div class="metadata">
+                <h2>Language metadata</h2>
+                <dl>
+                    <dt>ALSO KNOWN AS</dt>
+                    <dd>Iruliga</dd>
+                    <dt>CLASSIFICATION</dt>
+                    <dd>Dravidian ethnic group</dd>
+                    <dt>CODE AUTHORITY</dt>
+                    <dd>ISO 639-3</dd>
+                    <dt>LANGUAGE CODE</dt>
+                    <dd>Iru</dd>
+                    <dt>DOWNLOAD</dt>
+                    <dd><a href="#">As csv</a></dd>
+                    <dt>MORE RESOURCES</dt>
+                    <dd><a href="#">OLAC search</a></dd>
+                </dl>
+                </div>
+        
+                <div class="language-info">
+                <h2>Language information by source</h2>
+                <p>Irula is a Dravidian language spoken by the Irulas who inhabit the area of the Nilgiri mountains, in the states of Tamil Nadu, Kerala, and Karnataka, India. It is closely related to Tamil. It is written in the Tamil script.</p>
+        
+                <p>The language was first described and classified by indologist Kamil Zvelebil, who in 1955 showed that the Irula language is an independent Southern Dravidian language that is akin to Tamil, particularly Old Tamil, with some Kannada-like features. Before that, it was traditionally denied or put to doubt, and Irula was described as a crude or corrupt mixture of Tamil and Kannada.</p>
+        
+                <p>According to a tentative hypothesis by Kamil Zvelebil, a pre-Dravidian Melanid population that forms the bulk of the Irulas anthropologically began to speak an ancient pre- or proto-Tamil dialect, which was superimposed almost totally on their native (pre-Dravidian) speech. That then became the basis of the language, which must have subsequently been in close contact with the other tribal languages of the Nilgiri area as well as with the large surrounding languages such as Kannada, Tamil, and Malayalam.
+                </p>
+                </div>
+            </div>
+        
+            <div class="content-right">
+                <div class="map_container">
+                    <p>Contribute a Guest Post</p>
+                </div>
+        
+                <div class="location-info">
+                <h3>LOCATION INFORMATION</h3>
+                <dl>
+                    <dt>COORDINATES</dt>
+                    <dd>11.410000 , 76.699997</dd>
+                </dl>
+                </div>
+        
+                <div class="compare-sources">
+                <h3>COMPARE SOURCES</h3>
+                <p>Information from: "The World Atlas of Language Structures". Bernard Comrie and David Gil and Martin Haspelmath and Matthew S. Dryer. Oxford University Press</p>
+                </div>
+            </div>
+            </div> 
+
+<footer>
+    <div class="footer-links">
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <p class="copyright">Copyright 2024 Irula Endangered Languages. All rights reserved.</p>
+</footer>
+    
+
+</body>
+<script src="../Javascript/google_map.js"></script>
+</html>
