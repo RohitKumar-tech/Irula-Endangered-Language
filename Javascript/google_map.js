@@ -5,15 +5,15 @@ function initMap() {
     });
 
     var languages = [
-        {name: "Irular", lat: 11.410000, lng: 76.699997, pop: "3500", risk: "high"},
-        {name: "Kota", lat: 11.415208, lng: 76.869385, pop: "1800", risk: "low"},
-        {name: "Kadar", lat: 10.166667, lng: 76.683333},
-        {name: "Kanikaran, Kanikkar", lat: 8.1800, lng: 77.4100},
+        {name: "Irular", lat: 11.410000, lng: 76.699997, pop: "2,33,000", risk: "low"},
+        {name: "Kota", lat: 11.415208, lng: 76.869385, pop: "200", risk: "high"},
+        {name: "Kadar", lat: 10.166667, lng: 76.683333 , pop: "1,700" , risk:"high"},
+        {name: "Kanikaran, Kanikkar", lat: 8.1800, lng: 77.4100 , pop: "1,000" , risk:"high"},
         {name: "Kattunayakan", lat: 11.6667, lng: 76.5833},
         {name: "Koraga", lat: 12.9141, lng: 74.8560},
         {name: "Kurichchan", lat: 11.807, lng: 76.1252},
         {name: "Kurumbas", lat: 11.407, lng: 76.7000},
-        {name: "Malai Arayan", lat: 9.7000, lng: 76.8000},
+        {name: "Malai Arayan", lat: 9.7000, lng: 76.8000 , pop:"2,20,000" , risk: "low"},
         {name: "Malasar", lat: 10.2500, lng: 76.6333},
         {name: "Malayali", lat: 12.1165, lng: 78.1587},
         {name: "Mannan", lat: 9.8518, lng: 77.2489},
