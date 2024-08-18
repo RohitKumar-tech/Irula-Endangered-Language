@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/firebase-connections/google.js" defer type="module"></script>
+    <script src="/firebase-connections/git.js" defer type="module"></script>
+    <script src="/firebase-connections/twitter.js" defer type="module"></script>
+    <title>Irula Endangered Languages</title>
+    <link rel="stylesheet" href="../../Css/style.css">
+    <link rel="stylesheet" href="../../Css/cards.css">
+    <link rel="stylesheet" href="../../Css/map.css">
+    <link rel="stylesheet" href="../../Css/slider.css">
+    <link rel="stylesheet" href="../../Css/style.css">
+    <link rel="stylesheet" href="../../Css/languages.css">
+    <link rel="stylesheet" href="../../Css/footer.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <style>
+        body {
+        font-family: sans-serif;
+        }
+
+        .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        }
+
+        .card {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 100px;
+        width: 100%;
+        }
+
+        .card-header {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        }
+
+        .card-body {
+        font-size: 1em;
+        line-height: 1.5;
+        }
+
+        .card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        }
+
+        .btn {
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1em;
+        padding: 10px 20px;
+        transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+        background-color: #0056b3;
+        }
+
+        .icon {
+        width: 50px;
+        height: 50px;
+        background-color: #ccc;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        }
+
+        .icon i {
+        font-size: 2em;
+        color: #666;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="nav-menu">
+            <a href="#" class="font-medium hover:text-primary">Create your account</a>
+            <a href="#" class="font-medium hover:text-primary">sign in</a>
+            <button placeholder="Search">Search</button>
+            <button1 type="submit" id="google-login-btn" class="google-button"><i class='bx bxl-google'></i></button1>
+            <button1 type="submit" id="github-login-btn" class="github-button"><i class='bx bxl-github' ></i></button1>
+            <button1 type="submit" id="twitter-login-btn" class="twitter-button"><i class='bx bxl-twitter' ></i></button1>
+        </div>
+
+        <div class="header">
+            <div class="logo">
+              <a href="../../index.html"><img src="../../assets/logo.png" alt="ELP Logo"></a>
+            </div>
+            <div class="header-right">
+              <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li>|</li>
+                <li><a href="../../Html/languages.html">Languages</a></li>
+                <li>|</li>
+                <li><a href="../../Html/resources.html">Resources</a></li>
+                <li>|</li>
+                <li><a href="../../Html/Submit.html">Submit</a></li>
+                <li>|</li>
+                <li><a href="../../Html/Blog.html">Blog</a></li>
+                <li>|</li>
+                <li><a href="../../Html/Download.html">Download</a></li>
+                <li>|</li>
+                <li><a href="../../Html/About.html">About</a></li>
+                <li>|</li>
+                <li><a href="../../Html/Mentors.html">Mentors</a></li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Kota</h1>
+        <p>Classification: Coimbatore - endangered</p>
+        <nav class="links">
+            <ul>
+                <li><a href="Kota.html">Description</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="activity.html">Activity</a></li>
+                <li><a href="revitalization.html">Revitalization</a></li>
+                <li><a href="#">Bibliography</a></li>
+            </ul>
+        </nav>
+        </header>
+
+<div class="container">
+  <div class="card">
+    <div class="card-header">No Bibliography is present till now for this language . Be the first one to share the Bibliography with us</div>
+    <div class="card-body">
+  </div>
+  </div>
+</div>
+
+<footer>
+    <div class="footer-links">
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <p class="copyright">Copyright 2024 Irula Endangered Languages. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

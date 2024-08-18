@@ -3,9 +3,9 @@
 This project is dedicated to creating an interactive map showcasing the distribution and details of the Irula language, which is considered endangered. The map will feature hover and zoom functionality, displaying relevant content on hover.
 
 ## Authors
-- [Rohit Kumar](https://github.com/RohitKumar-tech)
+- [Rohit Kumar](www.rohitsaraf.in)
 - [Samriddhi Dubey](https://github.com/samriddhi2810)
-- [Prathmesh Pathwardhan](https://github.com/SYMPCoding)
+- [Prathmesh Pathwardhan](https://portfolioprathamesh.netlify.app/)
 
 ## Table of Contents
 - [Introduction](#introduction)
