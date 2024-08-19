@@ -12,18 +12,18 @@ function initMap() {
         {name: "Kattunayakan", lat: 11.6667, lng: 76.5833 , pop: "72,000" , risk : "low"},
         {name: "Koraga", lat: 12.9141, lng: 74.8560 , pop: "50" , risk : "high"},
         {name: "Kurichchan", lat: 11.807, lng: 76.1252 , pop: "25,000" , risk : "low"},
-        {name: "Kurumbas", lat: 11.407, lng: 76.7000},
+        {name: "Kurumbas", lat: 11.407, lng: 76.7000 , pop: "283,000" , risk : "low"},
         {name: "Malai Arayan", lat: 9.7000, lng: 76.8000 , pop:"2,20,000" , risk: "low"},
-        {name: "Malasar", lat: 10.2500, lng: 76.6333},
-        {name: "Malayali", lat: 12.1165, lng: 78.1587},
-        {name: "Mannan", lat: 9.8518, lng: 77.2489},
-        {name: "Mudugar, Muduvan", lat: 10.4167, lng: 76.8833},
-        {name: "Muthuvan", lat: 10.1500, lng: 76.7667},
-        {name: "Palliyan", lat: 10.1500, lng: 77.3500},
-        {name: "Palliyar", lat: 9.8167, lng: 77.3500},
-        {name: "Paniyan", lat: 11.5000, lng: 76.5000},
-        {name: "Toda", lat: 11.4064, lng: 76.6932},
-        {name: "Uraly", lat: 10.1500, lng: 76.8500}
+        {name: "Malasar", lat: 10.2500, lng: 76.6333 , pop: "3,500" , risk : "high"},
+        {name: "Malayali", lat: 12.1165, lng: 78.1587 , pop: "" , risk : ""},
+        {name: "Mannan", lat: 9.8518, lng: 77.2489, pop: "" , risk : ""},
+        {name: "Mudugar, Muduvan", lat: 10.4167, lng: 76.8833, pop: "" , risk : ""},
+        {name: "Muthuvan", lat: 10.1500, lng: 76.7667, pop: "" , risk : ""},
+        {name: "Palliyan", lat: 10.1500, lng: 77.3500, pop: "" , risk : ""},
+        {name: "Palliyar", lat: 9.8167, lng: 77.3500, pop: "" , risk : ""},
+        {name: "Paniyan", lat: 11.5000, lng: 76.5000, pop: "" , risk : ""},
+        {name: "Toda", lat: 11.4064, lng: 76.6932, pop: "" , risk : ""},
+        {name: "Uraly", lat: 10.1500, lng: 76.8500, pop: "" , risk : ""}
     ];
 
     languages.forEach(function(language) {
