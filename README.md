@@ -4,7 +4,6 @@ This project is dedicated to creating an interactive map showcasing the distribu
 
 ## Authors
 - [Rohit Kumar](www.rohitsaraf.in)
-- [Samriddhi Dubey](https://github.com/samriddhi2810)
 - [Prathamesh Patwardhan](https://portfolioprathamesh.netlify.app/)
 
 ## Table of Contents
